@@ -4,7 +4,7 @@
  * get_height - recursively calculate the height
  * @root: pointer to the root node
  *
- * Return: the heigh of the tree or -1.
+ * Return: the heigh of the tree
  */
 size_t get_height(const binary_tree_t *root)
 {
