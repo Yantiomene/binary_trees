@@ -12,7 +12,7 @@ bst_t *ins_bst(bst_t **tree, int value)
 {
 	if (value < (*tree)->n)
 	{
-		if ((*tree)->left == NULL)
+		if (!(*tree)->left)
 		{
 			(*tree)->left = binary_tree_node(*tree, value);
 			return ((*tree)->left);
@@ -21,7 +21,7 @@ bst_t *ins_bst(bst_t **tree, int value)
 	}
 	if (value > (*tree)->n)
 	{
-		if ((*tree)->right == NULL)
+		if (!(*tree)->right)
 		{
 			(*tree)->right = binary_tree_node(*tree, value);
 			return ((*tree)->right);
@@ -41,7 +41,7 @@ bst_t *ins_bst(bst_t **tree, int value)
  */
 bst_t *bst_insert(bst_t **tree, int value)
 {
-	if (*tree == NULL)
+	if (!*tree)
 	{
 		*tree = binary_tree_node(NULL, value);
 		return (*tree);
