@@ -71,5 +71,6 @@ int min_right(const binary_tree_t *node);
 int is_bst(const binary_tree_t *node);
 bst_t *bst_insert(bst_t **tree, int value);
 bst_t *ins_bst(bst_t **tree, int value);
+bst_t *array_to_bst(int *array, size_t size);
 
 #endif
